@@ -73,7 +73,7 @@ O projeto utiliza os principais hooks do React para gerenciamento de estado e ef
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/rick-and-morty-explorer.git
+   git clone https://github.com/kimbioni/Rick-and-Morty_App.git
 
 
 =======
