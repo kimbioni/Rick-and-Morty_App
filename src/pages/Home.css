@@ -1,0 +1,85 @@
+.homepage_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homepage_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/rick&morty.gif");
+  background-size: cover;
+  background-position: center;
+  transition: all 5s ease-in;
+  z-index: 10;
+}
+
+.homepage_content {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  border-radius: 1rem;
+  opacity: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: opacity 2s ease 1s;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  overflow: hidden;
+}
+
+.homepage_content-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  img {
+    max-width: 70%;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    width: 60%;
+    text-align: center;
+    color: var(--light-blue);
+    text-shadow: 3px 1px 14px rgba(255, 255, 255, 1);
+  }
+}
+
+.image-shrink {
+  filter: blur(3px);
+}
+
+.content-show {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+
+    .homepage_content-container {
+
+        img {
+            max-width: 90%;
+        }
+
+        p {
+            font-size: 1.05rem;
+            width: 90%;
+        }
+    }
+
+}
